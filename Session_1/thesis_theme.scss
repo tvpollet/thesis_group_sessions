@@ -1,0 +1,189 @@
+/*-- scss:defaults --*/
+
+// Fonts: Atkinson Hyperlegible for body + headings, JetBrains Mono for code
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+// Typography
+$font-family-sans-serif: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', sans-serif;
+$presentation-heading-font: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', sans-serif;
+$font-family-monospace: 'JetBrains Mono', monospace;
+
+// Font sizes
+$presentation-font-size-root: 36px;
+$presentation-h1-font-size: 1.6em;
+$presentation-h2-font-size: 1.3em;
+$presentation-h3-font-size: 1.05em;
+
+// Font weights
+$presentation-heading-font-weight: 700;
+
+// Colour palette — Northumbria-inspired navy + warm accents
+$body-bg: #FAFAF8;
+$body-color: #2C2C3A;
+$presentation-heading-color: #1B2A4A;
+$link-color: #B5491D;
+$code-color: #7B3F8D;
+$code-bg: #F0EDE8;
+
+// Slide layout
+$presentation-slide-text-align: left;
+
+/*-- scss:rules --*/
+
+// Slide background subtle texture
+.reveal .slides section {
+  line-height: 1.5;
+}
+
+// Heading underline accent
+.reveal h2 {
+  border-bottom: 3px solid #B5491D;
+  padding-bottom: 0.25em;
+  margin-bottom: 0.6em;
+}
+
+// Slightly smaller body text for content density
+.reveal .slide p,
+.reveal .slide li {
+  font-size: 0.82em;
+}
+
+// List styling
+.reveal ul, .reveal ol {
+  margin-left: 0.6em;
+}
+
+.reveal li {
+  margin-bottom: 0.35em;
+}
+
+// Code block styling
+.reveal pre {
+  background-color: #F0EDE8;
+  border-left: 4px solid #B5491D;
+  border-radius: 4px;
+  padding: 0.6em;
+  font-size: 0.55em;
+}
+
+.reveal code {
+  font-size: 0.85em;
+}
+
+// Inline code
+.reveal p code, .reveal li code {
+  background-color: #F0EDE8;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  font-size: 0.8em;
+}
+
+// Blockquote styling — used for callouts / reassurance
+.reveal blockquote {
+  background-color: #EDE8E0;
+  border-left: 5px solid #1B2A4A;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+  font-style: normal;
+  border-radius: 4px;
+}
+
+// Title slide custom styling
+.reveal .title-slide {
+  text-align: left;
+}
+
+.reveal .title-slide h1 {
+  font-size: 1.8em;
+  font-weight: 800;
+  border-bottom: none;
+}
+
+// ── Dark background slides (title + section dividers) ──
+// Revealjs auto-applies .has-dark-background when data-background-color is dark
+.reveal .has-dark-background {
+  &, h1, h2, h3, p, li, span, a, strong, .muted {
+    color: #FAFAF8 !important;
+  }
+
+  h1, h2 {
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .slide-number, .footer {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+}
+
+// Section header slides (level 1 headings as section dividers)
+.reveal section.center h1 {
+  border-bottom: none;
+}
+
+// Emphasis colour
+.reveal strong {
+  color: #1B2A4A;
+}
+
+// ── Print styles ──
+@media print {
+  // Force backgrounds to print
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  // Preserve dark slide backgrounds and white text
+  .reveal .has-dark-background,
+  .reveal section[data-background-color] {
+    background-color: #1B2A4A !important;
+  }
+
+  .reveal .has-dark-background {
+    &, h1, h2, h3, p, li, span, a, strong, .muted {
+      color: #FAFAF8 !important;
+    }
+  }
+
+  // Ensure highlight-box keeps its colours
+  .highlight-box {
+    background-color: #1B2A4A !important;
+    color: #FAFAF8 !important;
+  }
+}
+
+// Footer / slide number styling
+.reveal .slide-number {
+  font-family: 'Atkinson Hyperlegible Next', sans-serif;
+  font-size: 0.5em;
+  color: #8C8C9A;
+}
+
+// Two-column layout helper
+.columns-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+  align-items: start;
+}
+
+// Highlight box
+.highlight-box {
+  background-color: #1B2A4A;
+  color: #FAFAF8;
+  padding: 0.6em 1em;
+  border-radius: 6px;
+  margin: 0.5em 0;
+}
+
+// Muted text
+.muted {
+  color: #8C8C9A;
+  font-size: 0.75em;
+}
+
+// Incremental list animation polish
+.reveal .fragment.fade-in {
+  transition: opacity 0.3s ease;
+}
