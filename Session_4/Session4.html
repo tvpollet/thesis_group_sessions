@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="Session4_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Session4_files/libs/quarto-html/tabby.min.js"></script>
+<script src="Session4_files/libs/quarto-html/popper.min.js"></script>
+<script src="Session4_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="Session4_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Session4_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="Session4_files/libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Thomas Pollet, Northumbria University (thomas.pollet@northumbria.ac.uk)">
+  <meta name="dcterms.date" content="2026-10-16">
+  <title>Thesis Session 4: Your Level 6 Project</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="Session4_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="Session4_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="Session4_files/libs/revealjs/dist/theme/quarto-532462bee8adee16f89d9a229daecfcc.css">
+  <link href="Session4_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="Session4_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="Session4_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="Session4_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Thesis Session 4: Your Level 6 Project</h1>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Prof.&nbsp;Dr.&nbsp;Thomas Pollet, Northumbria University (thomas.pollet@northumbria.ac.uk) 
+</div>
+</div>
+</div>
+
+  <p class="date">October 16, 2026</p>
+</section>
+<section id="reflecting-on-last-weeks-task-study-design" class="slide level2">
+<h2>Reflecting on last week’s task: Study Design</h2>
+<ul>
+<li>What challenges did you have when designing your study?</li>
+<li>Did you have any successes?</li>
+<li>Are you OK with the literature?</li>
+<li>What skills have you learned?</li>
+<li>How might you apply them to your future career?</li>
+<li>Is everyone happy with their study?</li>
+</ul>
+</section>
+<section id="where-we-are-at" class="slide level2">
+<h2>Where we are at!</h2>
+<p>At this stage, you should have a very good idea of what your study looks like. If this is what you’re going to do for your dissertation, we can start the ethics process.</p>
+
+<img data-src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTk4aHBtYmwzc2tsZDN1YnZ2Z2pvd3d5cDBia21ka2J6YnY5anFreSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3nskIst9QtSMg/giphy.gif" class="quarto-figure quarto-figure-center r-stretch" width="500"></section>
+<section id="completing-your-ethics-application" class="slide level2">
+<h2>Completing your ethics application</h2>
+<p><strong>Top tips</strong></p>
+<ol type="1">
+<li>Your ethics application needs to be detailed enough for your reviewer to understand what you are doing and be able to replicate your study.</li>
+</ol>
+<div class="fragment">
+<ol start="2" type="1">
+<li>Don’t forget the “extras”: participant info sheet, consent, debrief, the questionnaires/interview schedule, and advertisement.</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="3" type="1">
+<li>Only include information once but include it in the correct sections.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://media1.tenor.com/m/EquS9YPyS6MAAAAd/i-have-a-tip-seth-meyers.gif" class="quarto-figure quarto-figure-center" width="200"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="walkthrough-of-the-first-questions-on-the-student-project-approval-form" class="slide level2 smaller">
+<h2>Walkthrough of the first questions on the Student Project Approval form</h2>
+<ul>
+<li><strong>Project title and General aims</strong>
+<ul>
+<li>Choose a clear descriptive title (it’s the first thing you can do to help your reviewer).</li>
+<li>Give some theoretical background and justification for the work.</li>
+<li>Make sure you give a rationale for your research.</li>
+<li>Poorly rationalised research can be considered unethical as it wastes participants’ time.</li>
+<li>State your research question.</li>
+<li>State your aims.</li>
+<li>Give clear hypotheses about your variables. Consider direction!</li>
+</ul></li>
+</ul>
+</section>
+<section id="form-continued" class="slide level2 smaller">
+<h2>Form continued …</h2>
+<p><strong>Study details</strong></p>
+<ul>
+<li>Research activities: What will participants do during the study (like the procedure section of an article)? What analyses will you run on the data?</li>
+<li>Questionnaires/equipment: Describe the questionnaires you’ll be using. Personally, I would include a more brief overview here; give the reviewer the gist. You will provide more detail later.</li>
+<li>Ethical considerations: Are there any ethical considerations? If so, how will you offset them?</li>
+</ul>
+
+<img data-src="https://media1.tenor.com/m/uGtmpHyH4QEAAAAC/waiting-cat-filing-nail.gif" class="quarto-figure quarto-figure-center r-stretch" width="300"></section>
+<section id="form-continued-1" class="slide level2 smaller scrollable">
+<h2>Form continued …</h2>
+<p><strong>People and personal data</strong></p>
+<ul>
+<li>Confirm if you are collecting identifiable data or not (e.g., voice recordings are identifiable because you can hear a voice, online surveys tend not to be).</li>
+<li>Sample groups: Who are your participants? How many do you need (G*Power, 2.5x original)? How will you recruit them? Will you exclude anyone and if so, why?</li>
+<li>Provide a detailed description of what the participants do… Do this like the method section in an article.
+<ul>
+<li>E.g., if it’s an intervention, what does it entail? Has it been published before? Are you adapting something that exists? It needs to be crystal clear to the reviewer what you will do. If something is not stated in the ethics questionnaire you cannot do it!</li>
+<li>E.g., if it’s a questionnaire: Who developed it? What does it tell you? Provide some example items. How many items? What are answer anchors/number of points on a scale? How do you calculate the scale score, if appropriate? What’s the validity/reliability (e.g., comparisons to other measures; internal consistency)? Apply the above to any other measures. Include a document or link to the materials.</li>
+</ul></li>
+</ul>
+</section>
+<section id="data-anonymisation" class="slide level2">
+<h2>Data anonymisation</h2>
+<ul>
+<li><strong>Data management and storage</strong>
+<ul>
+<li>If you need identifiable data - How will you anonymise/pseudonymise the data?</li>
+<li>Where will data be stored? Will it be deleted at a future date? Will you share your data and if so how will it be presented? Will you be storing data externally? → Our preference if anonymous.</li>
+</ul></li>
+</ul>
+
+<img data-src="https://media1.tenor.com/m/nf985lW6iawAAAAC/anonymous-hacker.gif" class="quarto-figure quarto-figure-center r-stretch" width="350"></section>
+<section id="data-anonymisation-quantintervention" class="slide level2 smaller">
+<h2>Data anonymisation: Quant/Intervention</h2>
+<ul>
+<li>All contact details will be stored separately from the quant/qual data collected. These details will be used to invite people to [INTERVENTION] and later contact for data collection. Once the details are no longer needed (e.g., participant withdraws or data has been collected) they will be deleted.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>All quantitative data will be anonymous and assigned a code number.
+<ul>
+<li>[PAPER BASED] The data will be stored in a booklet with a participant number attached. The person’s name and participant number will be stored separately to ensure the same person uses the same number at different time points. Once knowing who is assigned which number is no longer needed, this information will be destroyed.</li>
+<li>[DIGITAL] Data will be stored online in the survey software and then downloaded to the university OneDrive. No IP addresses will be collected (or explain how removed). The anonymised data will then be used for the analysis.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="data-anonymisation-qual" class="slide level2 smaller">
+<h2>Data anonymisation: Qual</h2>
+<ul>
+<li>Transcripts of recordings will be de-identified during transcription. Transcripts may be made available in line with open science (e.g., via OSF) but sections where people are identifiable will be removed. Recordings will be retained during the analysis (e.g., for relistening) but will be deleted after publication of the data.</li>
+<li>Recordings of interviews will be transcribed with any identifiable details being removed – participants will be given a pseudonym. Recordings will be deleted after the analysis of data has taken place. Transcription may be completed by an external organisation but the recording content will be de-identified before sending this information to them.</li>
+</ul>
+</section>
+<section id="data-storage-quant" class="slide level2 smaller">
+<h2>Data storage: Quant</h2>
+<ul>
+<li>Questionnaire data will have any identifiable information removed (whilst this is not requested, it is possible people may write identifiable information in the textboxes - even if you tell them not to).</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>All data, once downloaded, will be stored on the University OneDrive; de-identified data (e.g., quantitative data) may be made available in line with open science practices (e.g., via the OSF or a journal repository). Data, be it anonymised or not, may be shared with the supervisor or module staff, as per module requirements. Think about where data are stored, e.g., Qualtrics.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://media1.tenor.com/m/9aE1QMbUjCMAAAAC/star-trek-the-next-generation.gif" class="quarto-figure quarto-figure-center" width="350"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="data-storage-qual" class="slide level2 smaller">
+<h2>Data storage: Qual</h2>
+<ul>
+<li>All data will be stored on the University OneDrive, recordings will be promptly deleted after analysis is complete and the de-identified transcripts will be held on OneDrive. De-identified whole or excerpts of transcripts may be made available in line with open science practices (e.g., hosted on the OSF or a journal repository) to ensure transparency of the analysis.</li>
+<li>All contact details will be stored on OneDrive and deleted after the interview has taken place. All data collected, anonymous or otherwise, may be shared with the dissertation supervisor or module staff.</li>
+</ul>
+</section>
+<section id="high-risk-categories" class="slide level2 smaller">
+<h2>High Risk categories</h2>
+<p>Will this research project involve data processing of identifiable high risk special category data?</p>
+<p>High risk special category data includes:</p>
+<ol type="1">
+<li>Racial or ethnic origin.</li>
+<li>Political opinions.</li>
+<li>Religious and philosophical beliefs.</li>
+<li>Trade union membership.</li>
+<li>Genetic data.</li>
+<li>Biometric data for the purpose of uniquely identifying a natural person.</li>
+<li>Data concerning health.</li>
+<li>Sex life and sexual orientation.</li>
+</ol>
+
+<img data-src="https://media1.tenor.com/m/vkIeIpdZeSsAAAAC/its-too-risky-bertram-fillcot.gif" class="quarto-figure quarto-figure-center r-stretch" width="300"></section>
+<section id="project-duration" class="slide level2">
+<h2>Project duration</h2>
+<ul>
+<li>Always give yourself some extra time in case you get an extension or PEC! Personally, I would put late August down (or even next year).</li>
+</ul>
+
+<img data-src="https://media1.tenor.com/m/3GB9S47ST2cAAAAC/overtime-work.gif" class="quarto-figure quarto-figure-center r-stretch" width="350"></section>
+<section id="participant-info-sheet" class="slide level2">
+<h2>Participant info sheet</h2>
+<ul>
+<li>Find a document to use for this at the end of the ethics form.</li>
+<li>Note: It’s important not to tell your participants your exact hypotheses. Just let them know what you’re expecting them to do. You can be a bit more vague about the purpose of the study here – but don’t lie.</li>
+</ul>
+</section>
+<section id="consent-form" class="slide level2">
+<h2>Consent form</h2>
+<ul>
+<li>You can find the consent forms on Blackboard. Find one which is appropriate.
+<ul>
+<li>E.g., someone doing a qualitative study will probably need a different form to someone doing an online study.</li>
+</ul></li>
+</ul>
+
+<img data-src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDF1ODUzb3Y4YXF2dGZnaWM5cjl3eWdhNXhqbGFkNWdxOXM2eWY5ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dvgpOVEAaW2HDY8rH2/giphy.gif" class="quarto-figure quarto-figure-center r-stretch" width="350"></section>
+<section id="debrief-sheet" class="slide level2">
+<h2>Debrief sheet</h2>
+<ul>
+<li>Here you can tell your participants about your hypotheses and what you expect to find. You can tell them here what the impact might be on either science or practice.</li>
+<li>This shouldn’t be the exact same information as your participant info sheet!</li>
+<li>If you provide support for participants (links to resources, e.g., Samaritans) this is where it should be included.</li>
+</ul>
+
+<img data-src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmY0dmV0a2E1ZzQydTJseHF5ODNreGUxMGNtMDhzNnZyaXZiMDM2ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Qy26pf8d73XZkVadct/giphy.gif" class="quarto-figure quarto-figure-center r-stretch" width="500"></section>
+<section id="questionsquestionnaires" class="slide level2">
+<h2>Questions/questionnaires</h2>
+<ul>
+<li>Include ALL questions.</li>
+<li>Include response options.</li>
+<li>Include demographics.</li>
+<li>If you are running an online study, you can just include the PDF of your survey as that will have everything in!</li>
+</ul>
+
+<img data-src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExejBsbHFncng3cGRxNDVsZmEwdjNxOXRsZjdneXAxcDJ3OXVkYmJwMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/64afibPa7ySzhFAf00/giphy.gif" class="quarto-figure quarto-figure-center r-stretch" width="400"></section>
+<section id="recruitment-materials" class="slide level2">
+<h2>Recruitment materials</h2>
+<ul>
+<li>How will you contact participants?</li>
+<li>If advertising on social media, it can be helpful to design a colourful ad to grab attention. (Note the limits of different platforms.)</li>
+</ul>
+
+<img data-src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3dqaDkzZTVhb25hazBzNzFlOTJzZnF2aHluazU5YXM5ZjFqbDN2aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OSqDpH5hmyxsRLB5ze/giphy.gif" class="quarto-figure quarto-figure-center r-stretch" width="500"></section>
+<section id="now" class="slide level2">
+<h2>Now:</h2>
+<ul>
+<li>Get working on your ethics!</li>
+</ul>
+
+<img data-src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3NqZmt0dmZmcDBheXJmcjd0eHNqem93eW45ZnZqajVydjUwYWp0ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ncMOpLZlqHKVi/giphy.gif" class="quarto-figure quarto-figure-center r-stretch" width="500"></section>
+<section id="for-next-time" class="slide level2">
+<h2>For next time…</h2>
+<ul>
+<li>Continue working on your ethics application and forms.</li>
+<li>Bring a copy with you to class next week.</li>
+<li>Print it out (to get peer feedback and my feedback).</li>
+</ul>
+
+<img data-src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3lwcnYyN3ZldGJlODRhZXpoNHd4MG56aWEwMGFtb216aHFlZW54MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zDpYQooxkwXkAWMxRK/giphy.gif" class="quarto-figure quarto-figure-center r-stretch" width="500"></section>
+<section id="references-and-further-reading." class="slide level2">
+<h2>References (and further reading.)</h2>
+<ul>
+<li>British Psychological Society. (2021). <em>BPS code of human research ethics.</em> British Psychological Society. <a href="https://doi.org/10.53841/bpsrep.2021.inf180">https://doi.org/10.53841/bpsrep.2021.inf180</a></li>
+<li>Sieber, J. E., &amp; Tolich, M. B. (2013). <em>Planning ethically responsible research.</em> SAGE Publications. <a href="https://doi.org/10.4135/9781506335162">https://doi.org/10.4135/9781506335162</a></li>
+</ul>
+<p><a href="https://tvpollet.github.io/thesis_projects/">https://tvpollet.github.io/thesis_projects/</a></p>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p><a href="http://tvpollet.github.io/disclaimer">Disclaimer</a></p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="Session4_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="Session4_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="Session4_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="Session4_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="Session4_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="Session4_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="Session4_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="Session4_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="Session4_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="Session4_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // target, if specified
+                link.setAttribute("target", "_blank");
+                if (link.getAttribute("rel") === null) {
+                  link.setAttribute("rel", "noopener");
+                }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
