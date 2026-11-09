@@ -1,0 +1,142 @@
+---
+title: "Ethics applications: common issues"
+subtitle: "Feedback on your first submissions"
+author: "Prof. Dr. Thomas Pollet, Northumbria University (thomas.pollet@northumbria.ac.uk)"
+date: today
+date-format: long
+format:
+  revealjs:
+    theme: thesis_theme.scss
+    slide-number: true
+    highlight-style: github
+    code-line-numbers: true
+    footer: "[Disclaimer](http://tvpollet.github.io/disclaimer)"
+    link-external-newwindow: true
+---
+
+## Why this slide deck?
+
+- The same issues came up across several applications.
+
+. . .
+
+- None of them is hard to fix.
+
+. . .
+
+- Check your own application against each slide before you resubmit.
+
+---
+
+## Tidy up the document
+
+- Remove all the guidance you received from the module lead. Your application will be much easier to read (and less likely to annoy reviewer).
+
+. . .
+
+- Accept or reject all tracked changes. The final version should contain none.
+
+. . .
+
+- **Run a spell checker**. A tool such as Copilot can also help you spot language errors and improve your writing.
+
+---
+
+## Data storage: add an alternative
+
+Add a sentence on repository storage, for example:
+
+. . .
+
+> *In addition, in line with best practice, I may also store my data in a research repository, such as Figshare or Zenodo. This will be agreed with my supervisor.*
+
+. . .
+
+- We will agree on the route together: Northumbria's institutional Figshare, or a personal account.
+
+---
+
+## Replication studies
+
+- Do not assume that readers have read the original paper. Likewise, do not assume the reader knows your data source (e.g., Traitors, Guardian blind dates)
+
+. . .
+
+- Explain its key findings in your own words.
+
+. . .
+
+- State your hypotheses explicitly.
+
+. . .
+
+- Too many hypotheses or research questions? Focus on the key ones, or give examples.
+
+---
+
+## Avoid duplication
+
+- Give each piece of information once, in the section where it belongs.
+
+. . .
+
+- Elsewhere, refer back to it briefly (e.g., "see Recruitment").
+
+. . .
+
+**Typical example**
+
+- The same recruitment details appear under *Participants*, *Procedure*, and *Data collection*.
+
+---
+
+## Tell a story
+
+**Listing**
+
+> Jealousy is a common emotion. Many people use social media. Partners can see each other's online activity.
+
+. . .
+
+**Telling a story**
+
+> Social media make a partner's interactions with others visible. This visibility may create new triggers for jealousy. My study tests whether…
+
+. . .
+
+- Each sentence should lead to the next one.
+
+---
+
+## One sentence, one idea
+
+**Before**
+
+> Participants will be recruited via social media and the participant pool and they will complete an online survey which takes about 15 minutes and includes questions on jealousy and they can withdraw at any time.
+
+. . .
+
+**After**
+
+> Participants will be recruited via social media and the participant pool. They will complete an online survey on jealousy, which takes about 15 minutes. They can withdraw at any time.
+
+---
+
+## Before you resubmit: checklist
+
+- [ ] Module-lead guidance removed
+- [ ] No tracked changes left
+- [ ] Spelling and language checked
+- [ ] Repository storage (Figshare or Zenodo) mentioned
+- [ ] Replications: original findings explained, hypotheses stated
+- [ ] No duplicated information
+- [ ] Sections read as a story, not a list
+- [ ] One idea per sentence
+
+---
+
+## Now:
+
+- Get working on your revisions!
+
+![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3NqZmt0dmZmcDBheXJmcjd0eHNqem93eW45ZnZqajVydjUwYWp0ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ncMOpLZlqHKVi/giphy.gif){fig-align="center" width="500"}
